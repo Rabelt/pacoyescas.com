@@ -1,8 +1,8 @@
- <div class="carousel">
-  <ul class="slides" >
-     <li *ngFor="let imagen of imagenes">
-        <h2>{{imagen.title}}</h2>
-        <img src="{{imagen.url}}" alt="" >
-    </li>
-  </ul>
+<div class="carousel">
+	<ul class="slides" >
+		<li *ngFor="let carrusel of lstConfigCarrusel">
+			<h2>{{carrusel.title}}</h2>
+			<img src="{{carrusel.url}}" alt="" >
+		</li>
+	</ul>
 </div>

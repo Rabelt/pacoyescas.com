@@ -1,0 +1,40 @@
+.contacto{
+	background: url(http://www.pacoyescas.com/img/FondoRojo.jpg);
+
+}
+
+.contacto h2{
+	color: #fff;
+	font-size: 90px;
+	font-style: text-center;
+	text-align: center;
+}
+.contacto info-detail{
+	border-top: 1px solid #ffffff;
+	padding-top: 15px;
+}
+.contacto form{
+		padding-left: 0;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px solid #823234;
+	padding-bottom: 12px;
+	margin-bottom: 0;
+}
+
+.detalle_contacto{
+	color: white;
+}
+
+.formulario_contacto form{
+	padding-left: 0;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px solid #823234;
+	padding-bottom: 12px;
+	margin-bottom: 0;
+}

@@ -1,16 +1,32 @@
 import { Component } from '@angular/core';
+import { NoticarruselService } from  './noticarrusel.service';
+
 
 @Component({
-  selector: 'noticarrusel',
-  templateUrl: './noticarrusel.component.html',
-   styleUrls: ['./noticarrusel.component.css']
+	selector: 'noticarrusel',
+	templateUrl: './noticarrusel.component.html',
+	styleUrls: ['./noticarrusel.component.css'],
+	providers: [ NoticarruselService]
 })
 
 export class NoticarruselComponent {
-public imagenes: any[]  = [
-    { "title": "Cursos Blues", "url": "http://www.pacoyescas.com/img/sliderpacoweb4.png" },
-	{ "title": "etc 1", "url": "http://www.pacoyescas.com/img/sliderpacoweb2.png" },
-	{ "title": "etc 2", "url": "http://www.pacoyescas.com/img/sliderpacoweb3.png" },
-	
-];
+	public lstConfigCarrusel;
+
+
+	constructor(private _noticarruselService: NoticarruselService){
+
+	}
+
+	ngOnInit(){
+		this._noticarruselService.ejemplo().subscribe(
+			result => {
+				this.lstConfigCarrusel = result;
+
+			},
+			error => {
+				console.log("=>Error: " + error);
+			});
+
+	}
+
 }

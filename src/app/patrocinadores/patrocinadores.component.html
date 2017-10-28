@@ -1,0 +1,9 @@
+<ul class="patrocinadores">
+	<li *ngFor="let patrocinador of patrocinadoresObj">
+		<div>
+			<img src="{{patrocinador.imagenFondo}}" alt=""/>
+			<br>
+			<a href="{{patrocinador.urlEmpresa}}" target="_blank">{{patrocinador.nombreEmpresa}}</a>
+		</div>
+	</li>
+</ul>
